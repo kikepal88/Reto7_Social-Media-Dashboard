@@ -1,0 +1,74 @@
+:root {
+  --limegreen: hsl(163, 72%, 41%);
+  --brightred: hsl(356, 69%, 56%);
+  --facebook: hsl(208, 92%, 53%);
+  --twitter: hsl(203, 89%, 53%);
+  --instagram: linear-gradient (0deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  --youtube: hsl(348, 97%, 39%);
+  --darktheme: linear-gradient (0deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  --lighttheme: hsl(230, 22%, 74%);
+  --darkveryblue: hsl(230, 17%, 14%);
+  --darkveryblue2: hsl(232, 19%, 15%);
+  --darkdesaturatedblue: hsl(228, 28%, 20%);
+  --darkdesaturatedblue2: hsl(228, 34%, 66%);
+  --white: hsl(0, 0%, 100%);
+  --lightverypaleblue: hsl(225, 100%, 98%);
+  --lightgrayshblue: hsl(227, 47%, 96%);
+  --lightgrayshblue2: hsl(228, 12%, 44%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+}
+
+header {
+  height: 220px;
+  padding: 30px 20px;
+  border-radius: 0 0 25px 25px;
+  background-color: var(--lightverypaleblue);
+  color: var(--lightgrayshblue2);
+  font-weight: 700;
+}
+header .header-titlefollowers-container h1 {
+  margin-bottom: 5px;
+  font-size: 2.5rem;
+  color: var(--darkveryblue);
+}
+header p {
+  font-size: 1.2rem;
+}
+header .header-line-separator {
+  margin: 20px 0;
+  border-bottom: 1px solid var(--lightgrayshblue2);
+}
+header .header-darkmode-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mode-selector {
+  display: flex;
+  justify-content: flex-end;
+  width: 50px;
+  height: 25px;
+  padding: 3px;
+  border-radius: 12px;
+  background: var(--lighttheme);
+}
+.mode-mark {
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: var(--lightverypaleblue);
+}
