@@ -9,19 +9,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <header>
+<body id="body">
+  <header id="header">
     <section class="header-titlefollowers-container">
-      <h1>Social Media Dashborad</h1>
+      <h1 id="h1">Social Media Dashborad</h1>
       <p>Total Followers: 23,004</p>
     </section>
-    <div class="header-line-separator"></div>
+    <div class="header-line-separator" id="header-line-separator"></div>
     <section class="header-darkmode-container">
       <p>Dark Mode</p>
-      <div class="mode-selector">
-        <div class="mode-mark"></div>
-      </div>
+      <a href="#" onclick="darkMode()">
+        <div class="mode-selector" id="mode-selector">
+          <div class="mode-mark" id="mode-mark"></div>
+        </div>
+      </a>
     </section>
   </header>
+  <script src="js/index.js"></script>
 </body>
 </html>
