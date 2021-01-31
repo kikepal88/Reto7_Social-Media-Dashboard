@@ -3,7 +3,7 @@
   --brightred: hsl(356, 69%, 56%);
   --facebook: hsl(208, 92%, 53%);
   --twitter: hsl(203, 89%, 53%);
-  --instagram: linear-gradient (0deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  --instagram: linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
   --youtube: hsl(348, 97%, 39%);
   --darktheme: linear-gradient (200deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
   --lighttheme: hsl(230, 22%, 74%);
@@ -32,7 +32,7 @@ body {
   font-size: 1.4rem;
 }
 body.darktheme {
-  color: var(--darkveryblue);
+  background-color: var(--darkveryblue);
 }
 
 header {
@@ -92,4 +92,72 @@ header .header-darkmode-container {
 }
 .mode-mark.darktheme {
   background: var(--darkdesaturatedblue);
+}
+
+main {
+  width: 100%;
+  height: auto;
+  padding: 0 30px 40px;
+}
+main .main-followersstats {
+  width: 100%;
+}
+.followersstats-card {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  margin: 20px auto 0;
+  padding: 25px 0;
+  text-align: center;
+  background-color: var(--lightgrayshblue);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.followersstats-card.facebook {
+  border-top: 4px solid var(--facebook);
+}
+.followersstats-card.twitter {
+  border-top: 4px solid var(--twitter);
+}
+.followersstats-card.instagram::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: calc(100% + 2rem);
+  top: -25px;
+  right: 0;
+  border-radius: 6px 6px 0 0;
+  height: 4px;
+  background-image: linear-gradient(to right, #fdc468, #df4996);
+}
+.followersstats-card.youtube {
+  border-top: 4px solid var(--youtube);
+}
+.card-socialmediauser {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.card-socialmediauser p {
+  margin-left: 10px;
+}
+.card-followers {
+  margin-bottom: 15px;
+}
+.card-followers h2 {
+  font-size: 5rem;
+}
+.card-followers p {
+  color: var(--lightgrayshblue2);
+  letter-spacing: 0.4rem;
+}
+.card-updownstats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-updownstats p {
+  margin-left: 5px;
+  color: var(--limegreen);
+  font-weight: 700;
 }
