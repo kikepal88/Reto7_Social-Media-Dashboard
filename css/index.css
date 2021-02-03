@@ -112,6 +112,7 @@ main .main-followersstats {
   background-color: var(--lightgrayshblue);
   border-radius: 6px;
   overflow: hidden;
+  cursor: pointer;
 }
 .followersstats-card.darktheme {
   background-color: var(--darkdesaturatedblue);
@@ -168,8 +169,50 @@ main .main-followersstats {
 .card-updownstats p {
   margin-left: 5px;
   color: var(--limegreen);
+  font-size: 1.2rem;
   font-weight: 700;
 }
 .card-updownstats .down-stats {
   color: var(--brightred);
+}
+
+main .main-overview {
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+}
+.main-overview h3 {
+  font-size: 2.2rem;
+  color: var(--lightgrayshblue2);
+}
+.overview-cards-container {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+.overview-cards {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 15px;
+  padding: 25px;
+  background-color: var(--lightgrayshblue);
+  border-radius: 6px;
+}
+.cards-dates {
+  color: var(--lightgrayshblue2);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.cards-dates h4 {
+  margin-top: 20px;
+  color: black;
+  font-size: 3rem;
+}
+.cards-imgporcent {
+  text-align: end;
+}
+.cards-imgporcent .card-updownstats {
+  margin-top: 25px;
+  font-size: 1.2rem;
 }
