@@ -113,6 +113,9 @@ main .main-followersstats {
   border-radius: 6px;
   overflow: hidden;
 }
+.followersstats-card.darktheme {
+  background-color: var(--darkdesaturatedblue);
+}
 .followersstats-card.facebook {
   border-top: 4px solid var(--facebook);
 }
@@ -138,6 +141,9 @@ main .main-followersstats {
   justify-content: center;
   margin-bottom: 15px;
 }
+.card-socialmediauser.darktheme {
+  color: var(--darkdesaturatedblue2);
+}
 .card-socialmediauser p {
   margin-left: 10px;
 }
@@ -146,6 +152,9 @@ main .main-followersstats {
 }
 .card-followers h2 {
   font-size: 5rem;
+}
+.card-followers.darktheme h2 {
+  color: var(--white);
 }
 .card-followers p {
   color: var(--lightgrayshblue2);
@@ -160,4 +169,7 @@ main .main-followersstats {
   margin-left: 5px;
   color: var(--limegreen);
   font-weight: 700;
+}
+.card-updownstats .down-stats {
+  color: var(--brightred);
 }

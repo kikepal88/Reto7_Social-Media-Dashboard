@@ -5,4 +5,16 @@ function darkMode () {
   document.getElementById("header-line-separator").classList.toggle("darktheme");
   document.getElementById("mode-selector").classList.toggle("darktheme");
   document.getElementById("mode-mark").classList.toggle("darktheme");
+  document.getElementById("article-facebook").classList.toggle("darktheme");
+  document.getElementById("article-twitter").classList.toggle("darktheme");
+  document.getElementById("article-instagram").classList.toggle("darktheme");
+  document.getElementById("article-youtube").classList.toggle("darktheme");
+  document.getElementById("article-facebook-user").classList.toggle("darktheme");
+  document.getElementById("article-twitter-user").classList.toggle("darktheme");
+  document.getElementById("article-instagram-user").classList.toggle("darktheme");
+  document.getElementById("article-youtube-user").classList.toggle("darktheme");
+  document.getElementById("article-facebook-followers").classList.toggle("darktheme");
+  document.getElementById("article-twitter-followers").classList.toggle("darktheme");
+  document.getElementById("article-instagram-followers").classList.toggle("darktheme");
+  document.getElementById("article-youtube-followers").classList.toggle("darktheme");
 };
