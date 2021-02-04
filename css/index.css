@@ -95,6 +95,8 @@ header .header-darkmode-container {
 }
 
 main {
+  position: absolute;
+  top: 160px;
   width: 100%;
   height: auto;
   padding: 0 30px 40px;
@@ -185,6 +187,9 @@ main .main-overview {
   font-size: 2.2rem;
   color: var(--lightgrayshblue2);
 }
+.main-overview.darktheme h3 {
+  color: var(--white);
+}
 .overview-cards-container {
   width: 100%;
   height: auto;
@@ -194,20 +199,30 @@ main .main-overview {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-top: 15px;
+  max-width: 350px;
+  margin: 15px auto 0;
   padding: 25px;
   background-color: var(--lightgrayshblue);
   border-radius: 6px;
+}
+.overview-cards.darktheme {
+  background-color: var(--darkdesaturatedblue);
 }
 .cards-dates {
   color: var(--lightgrayshblue2);
   font-size: 1.2rem;
   font-weight: 700;
 }
+.cards-dates.darktheme {
+  color: var(--darkdesaturatedblue2);
+}
 .cards-dates h4 {
   margin-top: 20px;
   color: black;
   font-size: 3rem;
+}
+.cards-dates.darktheme h4 {
+  color: var(--white);
 }
 .cards-imgporcent {
   text-align: end;
