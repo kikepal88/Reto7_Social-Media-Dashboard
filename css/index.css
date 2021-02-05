@@ -204,6 +204,7 @@ main .main-overview {
   padding: 25px;
   background-color: var(--lightgrayshblue);
   border-radius: 6px;
+  cursor: pointer;
 }
 .overview-cards.darktheme {
   background-color: var(--darkdesaturatedblue);
@@ -264,7 +265,7 @@ main .main-overview {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 30px 50px;
+    padding: 30px 40px;
   }
   header .header-line-separator {
     display: none;
@@ -272,13 +273,51 @@ main .main-overview {
 
   main {
     top: 100px;
+    padding: 0 40px 40px;
+  }
+  main .main-followersstats {
+    justify-content: space-between;
   }
 
   .followersstats-card {
-    max-width: 45%;
+    max-width: 48%;
+    margin: 20px 0 0 0;
+  }
+
+  .overview-cards-container {
+    justify-content: space-between;
   }
 
   .overview-cards {
-    max-width: 45%;
+    max-width: 48%;
+    margin: 15px 0 0 0;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .followersstats-card {
+    width: 24%;
+    max-width: 280px;
+  }
+
+  .overview-cards {
+    width: 24%;
+    max-width: 280px;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  body {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  header {
+    max-width: 1440px;
+    padding: 30px 100px;
+  }
+
+  main {
+    max-width: 1440px;
+    padding: 0 100px 40px;
   }
 }
